@@ -1,0 +1,18 @@
+Buatlah sistem yang mensimulasikan aktifitas pembelian pulsa dengan 3 entitas :
+- Program Pembeli
+- Program Penyedia Layanan Pulsa
+- Program Payment
+
+Pembeli pulsa memasukkan nominal pembelian lewat Program Pembeli.
+Program Pembeli kemudian mengirimkan permintaan pembelian pulsa ke Program Penyedia Layanan Pulsa
+Program Penyedia Layanan Pulsa mengirimkan permintaan pembayaran ke Program Payment
+Di Program Payment :
+   - jika saldo dari pembeli tersebut masih cukup, maka ijinkan transaksi
+   - jika tidak, maka transaksi gagal
+Tampilkan hasil transaksi di Program Pembeli
+
+Kerjakan dengan menggunakan metode RPC.
+
+Clue : 
+- Program Penyedia Layanan Pulsa berperan sebagai client (bagi Payment) dan server (bagi Pembeli)
+- Anda bisa menerapkan konsep Threading
