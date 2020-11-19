@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 client = mqtt.Client(client_id="sub1", clean_session=False)
 
 # Koneksikan ke broker
-client.connect("127.0.0.1", port=1883)
+client.connect("34.233.135.154", port=1883)
 
 # Subscribe ke salah satu topik
 client.subscribe("/suhu/1", qos=1)

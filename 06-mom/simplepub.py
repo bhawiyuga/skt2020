@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 client = mqtt.Client(client_id="pub1", clean_session=False)
 
 # Buat koneksi ke broker
-client.connect("127.0.0.1", port=1883)
+client.connect("34.233.135.154", port=1883)
 
 # Publish message
-client.publish("/suhu/1", payload="Hello 2", qos=1)
+client.publish("/suhu/1", payload="Selamat Siang", qos=1)
